@@ -21,11 +21,12 @@ public class Order {
     LocalDateTime order_time;
     HashMap<String, Integer> orderItemIds;
 
-    public Order(Long orderNo, String customerId, OrderStatus status, LocalDateTime order_time, HashMap<String, Integer> orderItemIds) {
+    public Order(Long orderNo, String customerId, OrderStatus status, LocalDateTime order_time, Address address, HashMap<String, Integer> orderItemIds) {
         this.orderNo = orderNo;
         this.customerId = customerId;
         this.status = status;
         this.order_time = order_time;
+        this.address = address;
         this.orderItemIds = orderItemIds;
     }
 }

@@ -43,7 +43,7 @@ public class ProductController {
         return productService.getProductsByFilter(category, priceMax, priceMin);
     }
 
-    @PutMapping(path = "/add")
+    @PostMapping(path = "/add")
     public void pushProduct(@RequestBody Product product){ productService.pushProduct(product); }
 
     @PutMapping(path = {"/update/{id}"})

@@ -162,6 +162,7 @@ public class MongoDBInitializer {
                     "61e48735c66e6349b415412a",
                     OrderStatus.DELIVERED,
                     LocalDateTime.now(),
+                    address,
                     items);
 
             orderRepository.insert(order);

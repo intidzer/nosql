@@ -11,6 +11,7 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
+import rs.ac.singidunum.nosql.customer.Address;
 
 import java.time.LocalDateTime;
 import java.util.HashMap;
@@ -80,6 +81,7 @@ class OrderServiceTest {
                 "61e48735c66e6349b415412a",
                 OrderStatus.DELIVERED,
                 LocalDateTime.parse("2022-01-23T22:10:01.000"),
+                new Address("Serbia", "Kikinda", 23300, "Svetosavska 15"),
                 items);
 
         // when
